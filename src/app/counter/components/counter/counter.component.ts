@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  selector: 'app-counter',
+  templateUrl: './counter.component.html',
+  styleUrl: './counter.component.css'
 })
-export class AppComponent {
-
+export class CounterComponent {
   decreaseBy(number: number) {
     this.counter -= 1;
 }
@@ -19,6 +18,4 @@ export class AppComponent {
   reset():void{
     this.counter = 10
   }
-
-
 }
